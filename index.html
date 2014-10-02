@@ -3,22 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>Le DOM playground</title>
-  <style>
-  	.selected{ font-weight: bold;}
-  </style>
-   <script>
-  	console.log("JavaScript is alive");
-  </script>		
+<script src="script.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-   <div id="greeting">
-	 Hello There!
-   </div>
+  <h1 id="greeting">Hello there!</h1>
    <hr>
    <div class="content">
      Essentials:
    </div>
-
    <div id="essentials">
 	   <ul>
 	    <li>milk</li>
@@ -28,12 +22,17 @@
 	   	<li>beer</li>
 	   </ul>
    </div>
-
 	<div>
-		<img src="./images/honey.jpeg" height="60" width="60" alt="beer">
-	</div>				
-
-	<input type="submit" value="Reset" id="reset"></input>
+		<img src="./images/honey.jpeg" alt="beer" class="icon">
+	</div>
+  <!-- Add form  -->
+  <form action="">
+    <input type="submit" value="Reset" id="reset"></input>
+  </form>
+<script>
+  // Alternative to the window.onload function.
+  // initialize();
+</script>
 </body>
 </html>
 
